@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Temperatur-Server</title>
+    	<meta charset="UTF-8">
+		<style style="text/css">
+			.hoverTable{
+				width:60%;
+				margin-left:20%;
+				margin-right:20%;
+				text-align: center;
+				background: #ffffff;
+			}
+			
+			.hoverTable th{ 
+				padding:7px; border:#aaaaaa 1px solid;
+				border-radius: 6px 6px 6px 6px;
+			}
+			
+			.hoverTable td{ 
+				padding:7px; border:#aaaaaa 1px solid;
+				border-radius: 6px 6px 6px 6px;
+			}
+			/* Define the default color for all the table rows */
+			.hoverTable tr{
+				background: #ffffff;
+				border-radius: 6px 6px 6px 6px;
+			}
+			/* Define the hover highlight color for the table row */
+			.hoverTable tr:hover {
+			background-color: #f2f2f2;
+			border-radius: 6px 6px 6px 6px;
+			}
+		</style>
+	</head>
+	<body bgcolor="#ffffff">
+		<div style="width:70%;margin-left:15%;margin-right:15%;text-align: center;">
+			<h1>Temperatur-Server</h1>
+			<p><h3><a href="https://github.com/samularity">Project Page</a></h3></p>
+			<table class="hoverTable">
+			<!-- Start ESP Data -->
+			
+			<tr><td>Temperatur:<b>23.42&deg;C</b></td></tr>
+			<tr><td>MAC:<b> AF:FE:BE:EF</b></td></tr>
+			<tr><td>Uptime:<b>123123 seconds</b></td></tr>
+			<tr><td>Heap:<b>123123 seconds</b></td></tr>
+			<!-- End ESP Data -->  
+        	</table>
+        <p><canvas id="colorPicker" width="300" height="300"></canvas></p>
+        <button onclick="LedOFF()">LEDs OFF</button>
+      </div>
+    </body>
+  <script src="/code.js"></script>
+</html>			
+			
+			
+			
