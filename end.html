@@ -1,7 +1,14 @@
 <!-- End ESP Data -->  
+       </table><br>
+       <table class="hoverTable">
+       <tr><td onclick="LedOFF()">LED's OFF</td></tr>
         </table>
-        <p><canvas id="colorPicker" width="300" height="300"></canvas></p>
-        <button onclick="LedOFF()">LEDs OFF</button>
+        <p><canvas id="colorPicker"></canvas></p>
+        <br>
+    
+       <p>
+        <input class="CP" id="CP" type="color" onchange="getColorVal()"/> 
+        </p>
       </div>
     </body>
   <script src="/code.js"></script>
