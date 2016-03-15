@@ -124,7 +124,7 @@ function getPos(evt){
 		evt.type=='mouseleave') {
 
 		out.x = evt.pageX - rect.left;
-		out.y = evt.pageY - cantop;
+		out.y = evt.pageY - rect.top;
 	}
 	return out;
 }
