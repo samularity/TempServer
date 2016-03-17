@@ -75,7 +75,7 @@ local function handle_request(conn,request)
         local b = tonumber(_GET.b or 0)
         conn:send("setting LEDS to ("..r..","..g..","..b..")")
         buf = string.char(r,g,b)
-        buf = string.rep(buf, 9) 
+        buf = string.rep(buf, 15) 
         ws2812.writergb(ledpin,buf)
     elseif path == '/restart' then
         conn:send("bye")

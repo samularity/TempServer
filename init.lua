@@ -3,7 +3,7 @@ tmr.alarm(0, 5000, tmr.ALARM_SINGLE, function()
     require('ds18b20')
     ds18b20.setup(1)
     ledpin = 4
-    default_buf= string.rep(string.char(25,25,25), 9)
+    default_buf= string.rep(string.char(25,25,25), 15)
 
     ws2812.writergb(ledpin, default_buf) -- turn three WS2812Bs to red, green, and blue respectively
 
